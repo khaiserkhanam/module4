@@ -6,7 +6,7 @@
       var firstLetter = element.charAt(0).toLowerCase();
     
       if (firstLetter == 'j') {
-        byeSpeakername.speak(element);
+        byeSpeaker.speak(element);
       } else {
         helloSpeakername.speak(element);
       }
