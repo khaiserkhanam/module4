@@ -1,14 +1,10 @@
-(function (){
-    var names = ["July", "Carlin", "James", "Cinderella", "Samuel", "Grace", "John", "Jasmin", "Lilly", "Mohan"];
-    
-    for (var element of names) {
-    
-      var firstLetter = element.charAt(0).toLowerCase();
-    
-      if (firstLetter == 'j') {
-        byeSpeakername.speak(element);
-      } else {
-        helloSpeakername.speak(element);
-      }
-    }
-    })();
+(function () {
+var byeSpeakername = {};
+byeSpeakername.speak = function (name){
+  console.log(speakWord + " " + name);
+}
+
+var speakWord = "Good Bye";
+
+window.byeSpeakername = byeSpeakername;
+})();
